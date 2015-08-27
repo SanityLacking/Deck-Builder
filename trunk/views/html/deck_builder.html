@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type ="text/css" href="css/base.css">
+    <script src ="jquery/jquery-2.1.3.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <!--<script src="javascript/autoCompleteEx.js"></script>-->
+    <script src ="javascript/functions.js"></script>
+    <script src ="javascript/Card.js"></script>
+    <script src ="javascript/Deck.js"></script>
+    <script src ="javascript/DeckArea.js"></script>
+    <script src ="javascript/cards_init.js"></script>
+
+    <title> Deck Construction</title>
+</head>
+<body>
+<div class="notificationBox"></div>
+<div class="banner">
+    <!--<img src="../images/icons/placeholder.jpg" style="height: 150px; width: 500px;">-->
+    <div style="min-height:50px">
+        <div id='cssmenu'>
+            <ul>
+                <li><a href='/index'><span>Home</span></a></li>
+                <li><a href='/deck_list'><span>Deck List</span></a></li>
+                <li><a href='/deck_builder'><span>Deck Builder</span></a></li>
+                <li class='last'><a href='/about'><span>About</span></a></li>
+            </ul>
+        </div>
+        <!--<div class="nav-bar"><div class="nav-btn"><a href="/index">home</a></div><div class="nav-btn">test</div><div class="nav-btn"><a href="/deck_builder">Deck Builder</a></div></div>-->
+        <div class="login-container"><div class="loginBtn">login</div></div>
+    </div>
+    <div>
+        <div class="searchBar"><input type="text" id="searchInput" placeholder=":start typing"><div class="button"><input id="closeBtn" type="image" src="../images/icons/closeBtn.png" style="width: 30px; height: 30px;"></div>
+        </div>
+        <div class="button" style="width: 300px;">
+            <input id="menu" type="image" src="../images/icons/menu-btn.png" style="width: 30px; height: 30px;">
+            <input id="deckName" placeholder="Pick a Deck Title" class="whiteBackground">
+            <input id="clearDeckName" type="image" src="../images/icons/closeBtn.png" style="width: 30px; height: 30px; margin-bottom: 7px; left: -39px; position: relative; display: none;" >
+        </div>
+        <div  class="menu hidden"><div class="menu-options">option 1</div><div id="saveDeck" class="menu-options">Save Deck</div><div class="menu-options">option 3</div></div>
+    </div>
+</div>
+
+<div class="topbar hidden">
+
+</div>
+<div id="playArea" ondragover="allowDrop(event)" ondrop="drop(event)">
+    <div class="column " id="Creature"><h3>Creatures <span class="columnCounter"></span></h3><div class="cardColumn"></div></div>
+    <div class="column " id="Artifact"><h3>Artifacts <span class="columnCounter"></span></h3><div class="cardColumn"></div></div>
+    <div class="column " id="Sorcery"><h3>Sorceries <span class="columnCounter"></span></h3><div class="cardColumn"></div></div>
+    <div class="column " id="Instant"><h3>Instants <span class="columnCounter"></span></h3><div class="cardColumn"></div></div>
+    <div class="column " id="Enchantment"><h3>Enchantments <span class="columnCounter"></span></h3><div class="cardColumn"></div></div>
+    <div class="column " id="Land"><h3>Lands <span class="columnCounter"></span></h3><div class="cardColumn"></div></div>
+    <!--<div id="sidebarBtnOpen"><img src="images/icons/left-arrow-btn.png"></div>-->
+    <!--<div class="statBar">Stat Bar-->
+    <!--<div></div>-->
+    <!--<div id="sidebarBtnClose"><img src="images/icons/left-arrow-btn.png"></div>-->
+    <!--</div>-->
+
+</div>
+
+</body>
+</html>
+

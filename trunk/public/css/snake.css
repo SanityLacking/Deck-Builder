@@ -1,0 +1,12 @@
+body {
+
+}
+#myCanvas {
+    height: 900px;
+    z-index: 10;
+}
+#box{
+    height: 100px;
+    width: 100px;
+    color: dodgerblue;
+}
